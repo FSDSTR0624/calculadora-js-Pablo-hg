@@ -1,0 +1,224 @@
+@font-face {
+  font-family: Segoe-Text-Light;
+  src: url(font/SegoeUI-VF/Segoe-UI-Variable-Static-Text-Light.ttf);
+}
+@font-face {
+  font-family: Segoe-Text-Semibold;
+  src: url(font/SegoeUI-VF/Segoe-UI-Variable-Static-Text-Semibold.ttf);
+}
+@font-face {
+  font-family: Segoe-Text;
+  src: url(font/SegoeUI-VF/Segoe-UI-Variable-Static-Text.ttf);
+}
+@font-face {
+  font-family: Segoe-Text-Bold;
+  src: url(font/SegoeUI-VF/Segoe-UI-Variable-Static-Text-Bold.ttf);
+}
+
+body {
+  display: flex;
+}
+main {
+  background-color: #202020;
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  transition: background-color 0.3s ease;
+  padding: 15px;
+  padding-right: 0;
+}
+main:hover {
+  background-color: #281c23fc;
+}
+
+/* SECTION */
+section {
+  width: 65%;
+}
+section header {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  font-family: "Segoe-Text-Semibold";
+}
+section h1 {
+  margin: 0;
+}
+section article.op {
+  height: 22%;
+}
+section article.cal {
+  font-family: "Segoe-Text";
+  font-size: 20px;
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 3px;
+}
+section article.cal .operacion {
+  background-color: #323232;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+main:hover section article.cal .operacion {
+  background-color: #3c2d38;
+}
+main:hover section article.cal .operacion:hover {
+  background-color: #3b3b3b;
+}
+section article.cal .principal {
+  background-color: #3b3b3b;
+}
+section article.cal .principal:hover {
+  background-color: #3c2d38;
+}
+main:hover section article.cal .principal,
+main:hover section article.cal .operacion:hover {
+  background-color: #443640;
+}
+main:hover section article.cal .principal:hover {
+  background-color: #3c2d38;
+}
+section article.cal .igual,
+main:hover section article.cal .igual {
+  background-color: #db9ee5 !important;
+  color: #202020;
+}
+section article.cal .igual:hover,
+main:hover section article.cal .igual:hover {
+  background-color: #cd91d6 !important;
+}
+
+section article:not(.cal) {
+  text-align: end;
+  height: 20%;
+}
+section article:not(.cal) .op {
+  color: #a1a1a1;
+  font-family: "Segoe-Text-Semibold";
+  justify-content: end;
+  display: flex;
+  height: 25px;
+  visibility: hidden;
+}
+section article:not(.cal) .op span.igual {
+  display: none;
+  margin-left: 5px;
+}
+section article:not(.cal) .result {
+  font-family: "Segoe-Text-Semibold";
+  font-size: 50px;
+  background-color: transparent;
+  border: none !important;
+  color: white;
+  width: 100%;
+  text-align: end;
+  height: 55px;
+}
+section article:not(.cal) .result::placeholder {
+  color: white;
+}
+
+/* SECTION */
+
+/* ASIDE */
+aside {
+  /* max-width: 350px; */
+  width: 45%;
+  padding-right: 15px;
+}
+aside header {
+  margin-left: 10px;
+  font-size: 10px;
+  font-family: "Segoe-Text-Light";
+  height: 7%;
+  display: flex;
+  align-items: center;
+}
+aside h2 {
+  margin: 0;
+  padding-left: 10px;
+}
+aside hr {
+  border-top: 3px solid #db9ee5;
+  border-radius: 10px;
+  width: 20px;
+  margin-top: 0;
+  margin-left: 30px;
+}
+aside h2:hover {
+  color: #c4c4c4;
+}
+aside .info {
+  height: 90%;
+  text-align: end;
+  padding-left: 15px;
+}
+
+aside .desc {
+  overflow-y: auto;
+  height: 91%;
+}
+aside .desc::-webkit-scrollbar {
+  width: 5px;
+}
+aside .desc::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+aside .desc::-webkit-scrollbar-thumb {
+  background-color: #6c6c6c;
+  border-radius: 20px;
+}
+aside .text {
+  font-family: "Segoe-Text";
+  font-size: 20px;
+  text-align: left;
+}
+aside .operacion {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+aside .operacion:hover {
+  background-color: #322934;
+}
+aside .operacion .op {
+  color: #a1a1a1;
+  font-family: "Segoe-Text-Semibold";
+  justify-content: end;
+  display: flex;
+  margin-left: 5px;
+}
+aside .operacion .result {
+  font-family: "Segoe-Text-Semibold";
+  font-size: 20px;
+}
+aside div.papelera {
+  align-items: end;
+  justify-content: end;
+  display: flex;
+  transition: 0.3s;
+}
+aside svg.papelera {
+  padding: 10px;
+  border-radius: 5px;
+  width: 20px;
+}
+aside svg.papelera:hover {
+  background-color: #322934;
+}
+/* ASIDE */
+
+@media (width < 768px) {
+  aside {
+    display: none;
+  }
+  section {
+    width: 100%;
+  }
+}
