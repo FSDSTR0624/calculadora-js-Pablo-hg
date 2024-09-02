@@ -1,4 +1,5 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15386477&assignment_repo_type=AssignmentRepo)
+
 # Reto calculadora simple
 
 Este es un ejercicio para crear una calculadora
@@ -20,23 +21,23 @@ Este es un ejercicio para crear una calculadora
 
 ## Funciones
 
-### `add(a, b)`
+<!-- ### `add(a, b)` -->
 
 Esta función toma dos números como argumentos y devuelve la suma de los mismos.
 
-### `substract(a, b)`
+<!-- ### `substract(a, b)` -->
 
 Esta función toma dos números como argumentos y devuelve la resta del segundo número al primero.
 
-### `product(a, b)`
+<!-- ### `product(a, b)` -->
 
 Esta función toma dos números como argumentos y devuelve el producto de los mismos.
 
-### `division(a, b)`
+<!-- ### `division(a, b)` -->
 
 Esta función toma dos números como argumentos y devuelve el cociente de la división del primer número entre el segundo.
 
-### `clear()`
+<!-- ### `clear()` -->
 
 Esta función limpia la pantalla
 
@@ -47,8 +48,8 @@ Esta función limpia la pantalla
 
 ## Evaluación
 
--   Si la calculadora no sigue el esquema propuesto o no hace las operaciones indicadas, recibirás una nota del 0 al 5
--   Si la calculadora sigue el esquema propuesto y hace las operaciones indicadas, recibirás una nota del 5 al 7
--   Si has descubierto alternativas a eval(), tendrás un punto más
--   Si además has trabajado los CSS para que tenga un aspecto impresionante, tendrás un punto más.
--   Si encima has añadido funcionalidades extra a la calculadora, tendrás un punto más.
+- Si la calculadora no sigue el esquema propuesto o no hace las operaciones indicadas, recibirás una nota del 0 al 5
+- Si la calculadora sigue el esquema propuesto y hace las operaciones indicadas, recibirás una nota del 5 al 7
+- Si has descubierto alternativas a eval(), tendrás un punto más
+- Si además has trabajado los CSS para que tenga un aspecto impresionante, tendrás un punto más.
+- Si encima has añadido funcionalidades extra a la calculadora, tendrás un punto más.
